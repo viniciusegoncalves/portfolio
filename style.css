@@ -96,6 +96,10 @@
     display: none;
   }
 
+  .font-primary {
+    font-size: 3rem;
+  }
+
   #showcase img {
     display: none;
   }
