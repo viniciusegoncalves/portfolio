@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@400;500&family=Quicksand:wght@400;500;600;700&family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@400;500&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Source+Code+Pro&display=swap');
 
+/* color */
 
 .bg-color-primary {
   background-color: #FAF9F6;
@@ -19,16 +20,22 @@
   background-color: #FFEFE9;
 }
 
+.bg-card-3 {
+  background-color: #EDE0EE;
+}
+
 .color-component {
   color: #9900CE;
 }
 
-.font-primary {
+/* font */
+
+.font-title {
   font-family: 'Alata';
   font-size: 5rem;
 }
 
-.font-secondary {
+.font-subtitle {
   font-family: 'Alata';
   font-size: 2rem;
 }
@@ -39,22 +46,24 @@
 }
 
 .font-card-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
+  font-family: 'Open Sans hebrew', sans-serif;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .font-card-txt {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .font-card-txt-2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 400;
 }
+
+/* details */
 
 .detail-card {
   border-left: 4px solid #85D710;
@@ -62,6 +71,10 @@
 
 .detail-card-2 {
   border-left: 4px solid #FF5912;
+}
+
+.detail-card-3 {
+  border-left: 4px solid #9900CE;
 }
 
 .detail-round {
@@ -91,16 +104,65 @@
   }
 }
 
+/* projetos */
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.container-projects {
+  display: flex;
+  width: 90vw;
+}
+
 @media(max-width:768px) {
   .skills span {
     display: none;
   }
 
-  .font-primary {
+  .font-title {
     font-size: 3rem;
   }
 
   #showcase img {
     display: none;
   }
+
+  .container-projects {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+
 }
