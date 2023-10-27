@@ -157,7 +157,9 @@
   }
 
   .container-projects {
-    width: 90vw;
+    width: 100vw;
+    height: 100vw;
+    flex-direction: column;
   }
 
   .panel:nth-of-type(4),
