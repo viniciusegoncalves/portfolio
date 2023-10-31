@@ -143,6 +143,17 @@
   width: 90vw;
 }
 
+/* formulário */
+
+.marg-form {
+  max-width: 800px;
+}
+
+#contato button {
+  width: 350px;
+  height: 2rem;
+}
+
 @media(max-width:768px) {
   .skills span {
     display: none;
@@ -165,6 +176,10 @@
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
     display: none;
+  }
+
+  #contato button {
+    width: 150px;
   }
 
 }
