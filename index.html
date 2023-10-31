@@ -16,7 +16,7 @@
   <nav class="navbar text-dark navbar-expand-lg bg-color-primary py-3">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <img src="img/logo.svg" alt="Logo" />
+        <img src="img/logo.svg" width="" height="" alt="Logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,13 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#projetos" class="nav-link">Projetos</a>
-          </li>
-          <li class="nav-item">
             <a href="#experiencia" class="nav-link">Experiência</a>
           </li>
           <li class="nav-item">
             <a href="#formacao" class="nav-link">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link">Projetos</a>
           </li>
           <li class="nav-item">
             <a href="#contato" class="btn text-light nav-link bg-dark">Fale Comigo</a>
@@ -269,7 +269,7 @@
   </section>
 
   <!--Formulário-->
-  <section id="contato" class="bg-color-secundary">
+  <section id="contato" class="bg-color-secundary pb-5">
     <div class="container marg-form">
       <h2 class="pb-5 pt-5 font-subtitle text-center">Fale comigo</h2>
       <form class="row g-3">
@@ -290,18 +290,36 @@
           <textarea class="form-control" placeholder="Escreva aqui sua mensagem" id="text-input" rows="3"></textarea>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn text-center text-light bg-dark">Enviar</button>
+          <button type="submit" class="btn mb-3 text-center text-light bg-dark">Enviar</button>
         </div>
       </form>
+      <hr class="color-component">
     </div>
   </section>
 
-  <footer>
-
+  <footer class="footer p-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pb-3 text-center">
+          <a href="#">
+            <img width="" height="" src="img/logo-footer.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="col-md-4 pb-3 text-center">
+          <a href="https://www.instagram.com/vns016/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vinicius-ernande/" class="p-3"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/viniciusegoncalves"><i class="bi bi-github"></i></a>
+        </div>
+        <div class="col-md-4 text-center">
+          <button class="btn mb-3 text-center text-light ft-btn">Baixar meu CV</button>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src=" https://code.jquery.com/jquery-3.5.1.min.js">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
   <script>
